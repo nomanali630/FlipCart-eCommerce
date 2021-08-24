@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { products } from "../../constants/data.js";
+
 import { makeStyles, Typography, Button, Box, Divider } from "@material-ui/core";
 
 //for the count down we have to install this library
@@ -58,7 +58,7 @@ const responsive = {
   },
 };
 
-const Slide = ({timer,title}) => {
+const Slide = ({timer,title, products}) => {
   const classes = useStyle();
   const timerURL =
     "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg";
